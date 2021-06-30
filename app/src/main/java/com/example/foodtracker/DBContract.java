@@ -4,16 +4,7 @@ import android.provider.BaseColumns;
 
 public class DBContract {
     public static final String createTableFood =
-            /*"CREATE TABLE " + FoodEntry.TABLE_NAME + " (" +
-                    FoodEntry.COLUMN_F_EAN + " INTEGER NOT NULL," +
-                    FoodEntry.COLUMN_ENERGY + " INTEGER," +
-                    FoodEntry.COLUMN_FAT + " REAL," +
-                    FoodEntry.COLUMN_FAT_SATURED + " REAL," +
-                    FoodEntry.COLUMN_CARBOHYDRATES + " REAL," +
-                    FoodEntry.COLUMN_SUGAR + " REAL," +
-                    FoodEntry.COLUMN_PROTEINS + " REAL," +
-                    FoodEntry.COLUMN_SALT + " REAL," +
-                    " PRIMARY KEY (" + FoodEntry.COLUMN_F_EAN + ");";*/
+            
         "CREATE TABLE IF NOT EXISTS \"food\" (\n" +
                 "\t\"f_ean\"\tINTEGER NOT NULL,\n" +
                 "\t\"f_brand\"\tINTEGER,\n" +
